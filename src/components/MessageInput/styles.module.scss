@@ -1,0 +1,33 @@
+.messageInputWrapper {
+  width: 60%;
+  position: relative;
+
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+.messageInput {
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  border-radius: 3px;
+  outline: none;
+  font-size: 14px;
+  border: 1px solid var(--input-border-color);
+  background-color: var(--input-background-color);
+  color: var(--input-text-color);
+}
+
+.messageSendButton {
+  font-size: 30px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  outline: none;
+  color: var(--input-arrow-icon);
+}

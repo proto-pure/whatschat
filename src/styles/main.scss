@@ -1,0 +1,43 @@
+@import-normalize;
+
+:root {
+  --page-background-color: #fff;
+  --input-background-color: transparent;
+  --input-border-color: darkgray;
+  --input-text-color: #000;
+  --input-arrow-icon: hsl(0, 0%, 0%);
+  --message-block-username-color: #252423;
+  --message-block-background-color: #f2f6f9;
+  --message-block-content-text-color: #252423;
+  --error-boundary-text-color: #252423;
+  --no-messages-text-color: #252423;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-background-color: #202124;
+    --input-background-color: hsl(0, 0%, 7%);
+    --input-border: hsl(0, 0%, 18.82%);
+    --input-text-color: #fff;
+    --input-arrow-icon: hsl(0, 0%, 50%);
+    --message-block-username-color: #969ba1;
+    --message-block-background-color: #171717;
+    --message-block-content-text-color: #bdbdbd;
+    --error-boundary-text-color: #bdbdbd;
+    --no-messages-text-color: #bdbdbd;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--page-background-color);
+}
